@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <h1>TASK TRACKER</h1>
-
-    <!-- Add Task Section -->
+    <Tracker />
+    <!-- Add Task Section
     <div>
       <label for="new-task">Add Task:</label>
       <input 
@@ -13,7 +13,7 @@
       <button @click="addTask">Add</button>
     </div>
 
-    <!-- Task List Section -->
+     Task List Section
     <div>
       <h3>Tasks:</h3>
       <div v-for="(task, index) in tasks" :key="index">
@@ -26,16 +26,20 @@
       </div>
     </div>
 
-    <!-- Task Summary Section -->
+     Task Summary Section
     <div>
       <p>Total Tasks: {{ totalTasks }}</p>
       <p>Completed Tasks: {{ completedTasks }}</p>
       <p>Message: {{ message }}</p>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
+
+import { ref } from 'vue';
+import Tracker from './components/tracker.vue';
+
 export default {
   data() {
     return {
