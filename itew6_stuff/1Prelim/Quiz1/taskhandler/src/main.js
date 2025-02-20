@@ -1,10 +1,8 @@
+import "./assets/main.css";
+import "./assets/bootstrap.min.css";
+import "./assets/bootstrap.bundle.min.js";
 
-import './assets/bootstrap.min.css';
-import './assets/bootstrap.bundle.min.js';
-import './assets/main.css';
+import { createApp } from "vue";
+import App from "./App.vue";
 
-import { createApp } from 'vue'
-import App from './App.vue'
-
-
-createApp(App).mount('#app')
+createApp(App).mount("#app");
